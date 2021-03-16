@@ -1,11 +1,18 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
-  justify-content: flex-start;
+  background: #fe3;
+  /* justify-content: flex-start; */
   flex: 1 1 auto;
   padding-top: 70px;
+  align-items: center;
+  flex-direction: column;
+`;
+
+export const HomeImg = styled.img`
+  width: 700px;
 `;
 
 export const SidebarContainer = styled.div`
@@ -17,9 +24,9 @@ export const SidebarContainer = styled.div`
 `;
 
 export const ContentContainer = styled.div`
-    flex: 1;
-    margin: 0 auto;
-    padding: 50px 20px;
-    display: flex;
-    max-width: 1197px;
+  flex: 1;
+  margin: 0 auto;
+  padding: 50px 20px;
+  display: flex;
+  max-width: 1197px;
 `;

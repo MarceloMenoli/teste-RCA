@@ -1,17 +1,18 @@
-import Header from '../Header'
-import Sidebar from '../Sidebar'
-import {Container, SidebarContainer, ContentContainer} from './styles'
+import Header from "../Header";
+import ProductCard from "../ProductCard";
+import { Container, ContentContainer, HomeImg } from "./styles";
 
 export const Layout = ({ children }) => {
   return (
-      <>
-        <Header></Header>
-        <Container>
-            <SidebarContainer><Sidebar></Sidebar></SidebarContainer>
-            <ContentContainer>{children}</ContentContainer>
-        </Container>
-      </>
-  )
+    <>
+      <Header></Header>
+      <Container>
+        <HomeImg src='/images/HomeImg.png'/>
+        <ContentContainer>{children}</ContentContainer>
+        <ProductCard />
+      </Container>
+    </>
+  );
 };
 
 export default Layout;

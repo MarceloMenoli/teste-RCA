@@ -1,5 +1,5 @@
 import { Button } from "../Button";
-import { Container, Input } from "./style";
+import { Container, Input, ModalButton } from "./style";
 
 export const Modal = () => {
   return (
@@ -9,7 +9,8 @@ export const Modal = () => {
       {/* <button>Login</button> */}
       <Input placeholder="E-mail" type="email" required  />
       <Input placeholder="Password" type="password" required/>
-      <Button  width= '240px' title="Login" />
+      {/* <Button  width='240px' title="LOGIN" /> */}
+      <ModalButton>LOGIN</ModalButton>
     </Container>
   );
 };

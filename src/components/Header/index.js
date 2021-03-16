@@ -22,7 +22,6 @@ export const Header = () => {
         <Wrapper>
           <Button title="Login" onClick={() => setOpenModal(!openModal)} />
           {openModal && <Modal />}
-          {console.log(openModal)}
         </Wrapper>
       </Content>
     </Container>
