@@ -1,5 +1,6 @@
 import Header from "../Header";
 import ProductCard from "../ProductCard";
+import Footer from "../Footer";
 import { ProductsList } from "../ProductList";
 import Section from "../Section";
 import { Container, ContentContainer, HomeImg } from "./styles";
@@ -13,6 +14,7 @@ export const Layout = ({ children }) => {
         <Section />
         <ProductsList />
       </Container>
+      <Footer />
     </>
   );
 };
