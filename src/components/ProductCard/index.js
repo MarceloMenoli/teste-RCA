@@ -9,17 +9,17 @@ import {
   ProductButton,
 } from "./styles";
 
-export const ProductCard = () => {
+export const ProductCard = ({title, plataform, price, url}) => {
   return (
     <Container>
       <Content>
         <TitleWrapper>
-          <Title>TLOU 2</Title>
-          <Text>PS4</Text>
+          <Title>{title}</Title>
+          <Text>{plataform}</Text>
         </TitleWrapper>
-        <Price>$ 199</Price>
+        <Price>$ {price}</Price>
       </Content>
-      <ProductImg src="/images/TLOU2.png"/>
+      <ProductImg src={url}/>
       <ProductButton >Add to cart</ProductButton>
     </Container>
   );

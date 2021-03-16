@@ -1,5 +1,7 @@
 import Header from "../Header";
 import ProductCard from "../ProductCard";
+import { ProductsList } from "../ProductList";
+import Section from "../Section";
 import { Container, ContentContainer, HomeImg } from "./styles";
 
 export const Layout = ({ children }) => {
@@ -7,9 +9,9 @@ export const Layout = ({ children }) => {
     <>
       <Header></Header>
       <Container>
-        <HomeImg src='/images/HomeImg.png'/>
-        <ContentContainer>{children}</ContentContainer>
-        <ProductCard />
+        <HomeImg src="/images/HomeImg.png" />
+        <Section />
+        <ProductsList />
       </Container>
     </>
   );
