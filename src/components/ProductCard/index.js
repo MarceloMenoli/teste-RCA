@@ -7,9 +7,10 @@ import {
   Price,
   ProductImg,
   ProductButton,
+  RemoveButton,
 } from "./styles";
 
-export const ProductCard = ({title, plataform, price, url, onClick}) => {
+export const ProductCard = ({ title, plataform, price, url, onClick, remove, added }) => {
   return (
     <Container>
       <Content>
@@ -19,8 +20,13 @@ export const ProductCard = ({title, plataform, price, url, onClick}) => {
         </TitleWrapper>
         <Price>$ {price}</Price>
       </Content>
-      <ProductImg src={url}/>
-      <ProductButton onClick={onClick}>Add to cart</ProductButton>
+      <ProductImg src={url} />
+
+      {!added ? (
+        <ProductButton onClick={onClick}>Add to cart</ProductButton>
+      ) : (
+        <RemoveButton onClick={remove}>Remove from cart</RemoveButton>
+      )}
     </Container>
   );
 };

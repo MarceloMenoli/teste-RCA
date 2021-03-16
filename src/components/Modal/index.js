@@ -1,7 +1,6 @@
 import { Container, Input, ModalButton } from "./style";
-import { signIn } from "next-auth/client";
 
-export const Modal = () => {
+export const Modal = ({onClick}) => {
   return (
     <Container>
       {/* <input placeholder="E-mail" type="email" required />
@@ -10,7 +9,7 @@ export const Modal = () => {
       <Input placeholder="E-mail" type="email" required />
       <Input placeholder="Password" type="password" required />
       {/* <Button  width='240px' title="LOGIN" /> */}
-      <ModalButton onClick={() => signIn("google")}>LOGIN</ModalButton>
+      <ModalButton onClick={onClick}>LOGIN</ModalButton>
     </Container>
   );
 };

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Link from "next/link";
 import { signOut, useSession } from "next-auth/client";
 import { Button } from "../Button";
@@ -14,10 +13,8 @@ import {
   Logout,
 } from "./styles";
 
-export const Header = () => {
-  const [openModal, setOpenModal] = useState(false);
+export const Header = ({ onClick, toggleModal, openModal, signOutProfile }) => {
   const [session] = useSession();
-  console.log(session);
   return (
     <Container>
       <Content>
@@ -30,13 +27,13 @@ export const Header = () => {
         <Wrapper>
           {!session ? (
             <>
-              <Button title="Login" onClick={() => setOpenModal(!openModal)} />
-              {openModal && <Modal />}
+              <Button title="Login" onClick={toggleModal} />
+              {openModal && <Modal onClick={onClick} />}
             </>
           ) : (
             <Profile>
               Welcome Tom
-              <Logout onClick={() => signOut()}>Logout</Logout>
+              <Logout onClick={signOutProfile}>Logout</Logout>
             </Profile>
           )}
         </Wrapper>

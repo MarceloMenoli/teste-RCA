@@ -65,3 +65,23 @@ export const ProductButton = styled.button`
   outline: none;
   align-self: center;
 `;
+
+export const RemoveButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: ${(props) => props.theme.bg.secondary};
+  color: ${(props) => props.theme.text.primary};
+  padding: 0px 22px;
+  height: 45px;
+  width: 254px;
+  border-radius: 6px;
+  font-size: 0.8em;
+  cursor: pointer;
+  border: 0;
+  width: ${(props) => {
+    props.width || "";
+  }};
+  outline: none;
+  align-self: center;
+`;
