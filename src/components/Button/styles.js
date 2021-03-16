@@ -13,4 +13,6 @@ export const Container = styled.button`
   font-size: 0.8em;
   cursor: pointer;
   border: 0;
+  width: ${props => {props.width || ''}};
+  outline: none;
 `;
