@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 
-export const Index = () => {
+export const Cart = () => {
   return <Layout> </Layout>;
 };
 
-export default Index;
+export default Cart;

@@ -1,11 +1,14 @@
-import {Container, LinkImg} from './styles'
+import Link from "next/link";
+import { Container, LinkImg } from "./styles";
 
 export const IconLink = () => {
   return (
     <Container>
-      <LinkImg href="#" target="_blank">
-        <img src="/images/chart.png" />
-      </LinkImg>
+      <Link href="/cart">
+        <LinkImg>
+          <img src="/images/chart.png" />
+        </LinkImg>
+      </Link>
     </Container>
   );
 };

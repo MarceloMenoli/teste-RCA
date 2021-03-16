@@ -9,7 +9,7 @@ import {
   ProductButton,
 } from "./styles";
 
-export const ProductCard = ({title, plataform, price, url}) => {
+export const ProductCard = ({title, plataform, price, url, onClick}) => {
   return (
     <Container>
       <Content>
@@ -20,7 +20,7 @@ export const ProductCard = ({title, plataform, price, url}) => {
         <Price>$ {price}</Price>
       </Content>
       <ProductImg src={url}/>
-      <ProductButton >Add to cart</ProductButton>
+      <ProductButton onClick={onClick}>Add to cart</ProductButton>
     </Container>
   );
 };

@@ -5,6 +5,7 @@ export const Container = styled.div`
   align-items: center;
   width: 68%;
   justify-content: space-between;
+  margin: 55px 0px;
 `;
 
 export const Title = styled.h1`

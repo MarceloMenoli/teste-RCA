@@ -1,11 +1,13 @@
 import Header from "../Header";
-import ProductCard from "../ProductCard";
 import Footer from "../Footer";
 import { ProductsList } from "../ProductList";
 import Section from "../Section";
-import { Container, ContentContainer, HomeImg } from "./styles";
+import { Container, HomeImg } from "./styles";
+import { useState } from "react";
 
-export const Layout = ({ children }) => {
+export const Layout = () => {
+  const [products, setProducts] = useState([]);
+
   return (
     <>
       <Header></Header>

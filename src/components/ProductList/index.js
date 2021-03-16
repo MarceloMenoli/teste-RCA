@@ -39,7 +39,8 @@ const products = [
     platform: "PS4",
     price: "60",
     url: "/images/godOfWar.png",
-  },{ title: "TLOU 2", platform: "PS4", price: "120", url: "/images/TLOU2.png" },
+  },
+  { title: "TLOU 2", platform: "PS4", price: "120", url: "/images/TLOU2.png" },
   {
     title: "Cyberpunk",
     platform: "PS4, PC, Xbox",
@@ -60,7 +61,7 @@ const products = [
   },
 ];
 
-export const ProductsList = () => {
+export const ProductsList = ({onClick}) => {
   return (
     <Container>
       {products.map((product, index) => {
@@ -71,33 +72,10 @@ export const ProductsList = () => {
             plataform={product.platform}
             price={product.price}
             url={product.url}
+            onClick={onClick}
           />
         );
       })}
-      {/* <ProductCard
-        title="TLOU 2"
-        plataform="PS4"
-        price="120"
-        url="/images/TLOU2.png"
-      />
-      <ProductCard
-        title="Cyberpunk"
-        plataform="PS4, PC, Xbox"
-        price="200"
-        url="/images/cyberpunk.png"
-      />
-      <ProductCard
-        title="Days Gone"
-        plataform="PS4"
-        price="127"
-        url="/images/daysGone.png"
-      />
-      <ProductCard
-        title="God of War"
-        plataform="PS4"
-        price="60"
-        url="/images/godOfWar.png"
-      /> */}
     </Container>
   );
 };

@@ -6,4 +6,5 @@ export const Container = styled.div`
 
 export const LinkImg = styled.a`
   display: flex;
+  cursor: pointer;
 `;
