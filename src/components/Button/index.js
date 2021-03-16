@@ -1,8 +1,8 @@
 import { Container } from "../Button/styles"
 
-export const Button = ({title}) => {
+export const Button = ({title, onClick}) => {
   return (
-    <Container> 
+    <Container onClick={onClick}> 
         {title}
     </Container>
   )

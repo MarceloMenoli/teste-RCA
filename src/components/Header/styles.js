@@ -13,6 +13,7 @@ export const Content = styled.div`
   align-items: center;
   width: 90%;
   justify-content: space-between;
+  position: absolute;
 `;
 
 export const LogoContainer = styled.div`
@@ -30,4 +31,11 @@ export const Logo = styled.img`
 export const Link = styled.a`
   cursor: pointer;
   color: ${(props) => props.theme.text.secondary};
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
 `;
