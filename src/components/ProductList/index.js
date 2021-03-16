@@ -1,3 +1,4 @@
+import { useState } from "react";
 import ProductCard from "../ProductCard";
 import { Container } from "./styles";
 
@@ -61,7 +62,7 @@ const products = [
   },
 ];
 
-export const ProductsList = ({onClick}) => {
+export const ProductsList = ({ onClick }) => {
   return (
     <Container>
       {products.map((product, index) => {

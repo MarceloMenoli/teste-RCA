@@ -6,14 +6,14 @@ import { Container, HomeImg } from "./styles";
 import { useState } from "react";
 
 export const Layout = () => {
-  const [products, setProducts] = useState([]);
+  const [productsChart, setProductsChart] = useState([]);
 
   return (
     <>
       <Header></Header>
       <Container>
         <HomeImg src="/images/HomeImg.png" />
-        <Section />
+        <Section  counter='0'/>
         <ProductsList />
       </Container>
       <Footer />

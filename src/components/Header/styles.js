@@ -29,7 +29,7 @@ export const Logo = styled.img`
   position: relative;
 `;
 
-export const Link = styled.a`
+export const LinkNav = styled.a`
   cursor: pointer;
   color: ${(props) => props.theme.text.secondary};
 `;
@@ -39,4 +39,31 @@ export const Wrapper = styled.div`
   position: relative;
   flex-direction: column;
   align-items: center;
+`;
+
+export const Profile = styled.div`
+  display: flex;
+  align-items: center;
+  width: 256px;
+  justify-content: space-between;
+  color: #3877a1;
+  font-size: 0.9em;
+`;
+
+export const Logout = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: ${(props) => props.theme.bg.secondary};
+  color: ${(props) => props.theme.text.primary};
+  padding: 0px 22px;
+  height: 45px;
+  border-radius: 6px;
+  font-size: 0.8em;
+  cursor: pointer;
+  border: 0;
+  width: ${(props) => {
+    props.width || "";
+  }};
+  outline: none;
 `;
